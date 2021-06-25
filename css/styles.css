@@ -50,14 +50,24 @@ footer {
 .tile {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
+  position: relative !important;
+  /* padding: 20px; */
 }
 .tile img {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
+  height: 50vh;
+  width: 100% !important;
+  /* padding: 20px; */
+}
+
+.box{
+  padding-top: 20px !important;
 }
 .tile img:hover {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
+  filter: brightness(50%);
 }
 
 /* Hint: Notice the position:absolute and z-index properties. */
@@ -67,21 +77,35 @@ footer {
   z-index: 1;
   text-transform: uppercase;
   letter-spacing: 2px;
+
+  top: 70% !important;
+  left: 26% !important;
+  transform: translate(-20%, -50%);
+
 }
 
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/assets/hero.jpg");
+    url("../assets/hero.jpg");
 
   /* TODO: MODULE_LAYOUT */
   /* 1. Set a specific height. */
   /* 2. Position and center the image to scale nicely on all screens. */
+  height: 50vh;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 .hero-subheading {
   font-size: 24px;
   font-weight: 100;
+  text-align: center;
+  color: white;
 }
 .hero-input {
   width: 80%;
@@ -106,10 +130,13 @@ footer {
 .adventure-card img {
   /* TODO: MODULE_ADVENTURES_GRID */
   /* 1. Fill in the required properties. */
+  height: 35vh;
+  width: 100% !important;
 }
 .adventure-card img:hover {
   /* TODO: MODULE_ADVENTURES_GRID */
   /* 1. Fill in the required properties. */
+  filter: brightness(60%);
 }
 
 /* ================================== */
@@ -119,16 +146,26 @@ footer {
 .adventure-detail-card {
   /* TODO: MODULE_ADVENTURE_DETAILS */
   /* 1. Fill in the required properties. */
+  /* width: 80%; */
+  /* text-align: center; */
 
 }
 
 .adventure-card-image {
   /* TODO: MODULE_ADVENTURE_DETAILS */
   /* 1. Fill in the required properties. */
+  /* height: 80vh !important; */
+  /* max-height: 100%; */
+  width: 100%;
+  
+
+  padding-bottom: 8px;
 }
 .adventure-card-image:hover {
   /* TODO: MODULE_ADVENTURE_DETAILS */
   /* 1. Fill in the required properties. */
+  filter: brightness(50%);
+  
 }
 .experience-content ul li {
   margin-left: 16px;
